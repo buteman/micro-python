@@ -1,4 +1,0 @@
-micro-python
-============
-
-offline oscilloscope
