@@ -1,0 +1,25 @@
+save file in scope directory
+
+then:
+git add name-of-file
+
+then:
+git commit -m 'first commit'  NOTE after this the words should be different so you can track versions etc.
+
+While the other commands were pretty straightforward, the commit command has a little more going on so let's break it down. When you type git, that's just telling the command line that you want to use the git program. When you type commit, you're telling git you want to use the commit command. Everything that follows those two thing count as options. The first, -m, is what's known as a flag. A flag specifies that you want to do something special rather than just run the commit command. In this case, the -m flag means "message" and what follows it is your commit message (in the example, 'first commit'). The message isn't absolutely necessary (although you'll usually need to provide one), but simply a reference to help you differentiate the various versions of a file (or files) you commit to your repository.P
+
+Your first commit should go by in a split second because you haven't actually uploaded anything yet. To get this empty README file to GitHub, you need to push it with a couple of commands. Here's the first:P
+
+git remote add origin https://github.com/yourusername/Hello-World.gitP
+
+You need to replace "yourusername" with—you guessed it—your GitHub username. For me, it'd look like this:P
+
+git remote add origin https://github.com/gittest1040/Hello-World.gitP
+
+This command tells git where to send your Hello-World repository. Now all you need to do is send it:P
+
+git push origin masterP
+
+Once you run that command, everything (in this case, just your README file) will make it's way over to GitHub. Congratulations on your first commit!P
+
+
