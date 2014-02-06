@@ -1,0 +1,27 @@
+5th March 2014
+
+This is my little project to create a simple type of oscilloscope using my laptop
+running Ubuntu Linux and my micropython board ( it hasn't arrived yet).
+At present I am thinking to make it work as follows:
+
+1/ Laptop writes a small file to the SD card on the board via USB
+   This file will tell the board how long to sample one of the ADC's.
+
+2/ The board will read this file, delete it and carry out the task.
+
+3/ The board will read the values from the ADC and write them to another file.
+   When it has completed the task it will write a small file which will simply be used
+   so the laptop knows the task has been completed.
+
+4/ The laptop will copy this file to it's own hard disc and then the data can be displayed
+   by the program.
+
+So far the code for the laptop has got to the point where it's reading from a dummy file 
+containing random data created by a small python script. It allows the data to be displayed
+much as it would appear on an oscilloscope, displaying all the data in the file. Both how many 
+data points are displayed and how long a pause takes place before each update can be selected.
+It is also possible to select the first point in the file to display and how many points to display
+as a static display. 
+A function has been started to create the instruction file but of course it cannot be fully implemented
+until the board is available.
+
